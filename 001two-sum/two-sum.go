@@ -1,4 +1,6 @@
-package twosum
+package main
+
+import fm "fmt"
 
 func twoSum(nums []int, target int) []int {
 	for i, num := range nums {
@@ -21,4 +23,10 @@ func twoSum2(nums []int, target int) []int {
 
 	}
 	return nil
+}
+
+func main() {
+	nums := []int{1, 2, 3, 4}
+	result := twoSum(nums, 3)
+	fm.Println(result)
 }
